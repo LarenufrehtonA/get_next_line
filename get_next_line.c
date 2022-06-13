@@ -34,7 +34,7 @@ char	*get_next_line(int fd)
 			s = ft_strdup(buffer);
 		else
 			s = ft_strjoin(s, buffer);
-		if (ft_strchr(buffer, '\n')) // buffersize cok fazla  girildiginde direkt bitirmesi icin.
+		if (ft_strchr(buffer, '\n'))
 			break ;
 		size = read(fd, buffer, BUFFER_SIZE);
 		buffer[size] = 0;
