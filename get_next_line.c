@@ -10,7 +10,7 @@ char	*move_line(char *s)
 		free(s);
 		return (NULL);
 	}
-	if (*(dest + 1)) // alt satırın ilk karakterine geçme mevzusu
+	if (*(dest + 1))
 		dest = ft_strdup(dest + 1);
 	else
 		dest = NULL;
